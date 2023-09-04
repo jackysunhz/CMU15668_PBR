@@ -1,0 +1,128 @@
+**Assignment 1 Report**
+
+Student name: Jacky Sun
+
+(##) Feedback
+
+Use this section to provide feedback about the assignment.
+
+(##) Task 1: Generating rays and using JSON
+
+*Problems Encountered:*
+
+*Time Spent: 15 min*
+
+Manual Ray Images:
+![mine](images/01_manual_ray_image.png) ![ref](images/01_manual_ray_image-ref.png)
+
+Camera Ray Images:
+![mine](images/01_camera_ray_image.png) ![ref](images/01_camera_ray_image-ref.png)
+
+(##) Task 2: Transforms
+
+*Problems Encountered:*
+
+*Time Spent: 15 min*
+
+![mine](images/01_xformed_camera_ray_image.png) ![ref](images/01_xformed_camera_ray_image-ref.png)
+
+(##) Task 3: Spheres
+
+*Problems Encountered:*
+
+*Time Spent: 1 h*
+
+![mine](images/01_xformed_camera_sphere_image.png) ![ref](images/01_xformed_camera_sphere_image-ref.png)
+
+(##) Task 4, 5, 6: Materials, Recursive Ray Tracing, and Scene Renderer
+
+*Problems Encountered: Making dielectric material work is very hard. I initially keep rendering glass material black because I miscomputed the refraction direction when shooting ray from inside the object.
+Later on I got into a problem that gives me dark ring around a glass sphere, which turns out to be the total internal reflection term.*
+
+*Time Spent: ~10 h*
+
+Recursive Ray Tracing:
+![mine](images/01_recursive_raytracing.png) ![ref](images/01_recursive_raytracing-ref.png)
+
+Plane Scene:
+![mine](images/01_plane.png width="300px") ![ref](images/01_plane-ref.png width="300px")
+
+Balls Scene:
+![mine](images/02_balls.png width="300px") ![ref](images/02_balls-ref.png width="300px")
+
+Reflective Scene:
+![mine](images/03_refl.png width="300px") ![ref](images/03_refl-ref.png width="300px")
+
+Refractive Scene:
+![mine](images/04_refr.png width="300px") ![ref](images/04_refr-ref.png width="300px")
+
+Quad Light:
+![mine](images/05_quad-light.png width="300px" ) ![ref](images/05_quad-light-ref.png width="300px")
+
+Cornell Box:
+![mine](images/06_cornell-box.png width="300px") ![ref](images/06_cornell-box-ref.png width="300px")
+
+(##) Task 7: Ray-Triangle Intersection
+
+*Problems Encountered:*
+
+*Time Spent: 1 h*
+
+Your image will be significantly noisier than the reference unless you choose to render with a higher number of samples. The reference below uses 1024 samples per pixel.
+![mine(50spp)](images/simple-geometry.png width="220px") ![ref(50spp)](images/simple-geometry-50spp.png width="220px") ![ref](images/simple-geometry-ref.png width="220px")
+
+(##) Task 8: Solid Textures
+
+*Problems Encountered: I had to revise a lot of C++ to make the Texture class work, also parsing json object took some while in the beginning.*
+
+*Time Spent: ~10 h*
+
+Constant Texture:
+![mine](images/constant-cornell-box.png width="300px") ![ref](images/constant-cornell-box-ref.png width="300px")
+
+Checkerboard Texture:
+![mine](images/checker.png width="300px") ![ref](images/checker-ref.png width="300px")
+
+Perlin Noise:
+![mine](images/marble.png width="300px") ![ref](images/marble-ref.png width="300px")
+
+(##) Task 9: Image Textures
+
+*Problems Encountered: Mapping a point to spherical coordinates was more cumbersome than expected, and I had to do a lot of trials to finally make it work.*
+
+*Time Spent: 3 h*
+
+UV-Mapping Spheres:
+![mine](images/earth.png width="300px") ![ref](images/earth-ref.png width="300px")
+
+UV-Mapping Quads:
+![mine](images/textured-box.png width="300px") ![ref](images/textured-box-ref.png width="300px")
+
+UV-Mapping Triangles:
+
+Your image will be significantly noisier than the reference unless you choose to render with a higher number of samples. The reference below uses 1024 samples per pixel.
+![mine(50spp)](images/teapot.png width="300px") ![ref](images/teapot-ref.png width="300px")
+
+(##) Task 10: Blend Materials
+
+*Problems Encountered:*
+
+*Time Spent: 30 min*
+
+![mine](images/blend.png width="300px") ![ref](images/blend-ref.png width="300px")
+
+(##) Task 11: Interesting Scene
+
+![](images/custom.png)
+
+
+<!--- Markdeep & image comparison library - probably no need to change anything below -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="../resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../resources/jquery.event.move.js"></script>
+<script src="../resources/jquery.twentytwenty.js"></script>
+<link href="../resources/offcanvas.css" rel="stylesheet">
+<link href="../resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>

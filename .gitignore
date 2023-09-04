@@ -6,7 +6,6 @@ CMakeSettings.json
 sampleData/
 report-pa1.tar.gz
 scenes/
-report/
 *.gz
 .vscode/launch.json
 .idea/
