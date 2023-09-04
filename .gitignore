@@ -1,0 +1,13 @@
+report-pa0.tar.gz
+build/
+.vscode/settings.json
+.vs/
+CMakeSettings.json
+sampleData/
+report-pa1.tar.gz
+scenes/
+report/
+*.gz
+.vscode/launch.json
+.idea/
+.vscode/
